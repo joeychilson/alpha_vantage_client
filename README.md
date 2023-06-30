@@ -1,11 +1,10 @@
-# AlphaVantageClient
+# AlphaVantage
 
-**TODO: Add description**
+An Elixir-based HTTP Client for Alpha Vantage API
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `alpha_vantage_client` to your list of dependencies in `mix.exs`:
+`AlphaVantage` is available on Hex. Add it to your list of dependencies in mix.exs:
 
 ```elixir
 def deps do
@@ -15,7 +14,17 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/alpha_vantage_client>.
+## Configuration
 
+Add your API key to your config.exs file:
+
+```elixir
+config :alpha_vantage_client, :api_key, ""
+```
+
+You can set rate limit for API calls if you have a premium account:
+
+```elixir
+config :alpha_vantage_client, :interval, 1_000
+config :alpha_vantage_client, :max, 5
+```

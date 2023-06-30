@@ -18,12 +18,12 @@ defmodule AlphaVantage do
   @doc """
   Fetches the daily time series for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the time series for.
   * `interval` - The interval to fetch the time series for.
 
-  ## Parameters
+  ## Optional
 
   * `adjusted` - If true, the adjusted time series is returned.
   * `extended_hours` - If true, the extended hours time series is returned.
@@ -62,7 +62,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the daily time series for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the time series for.
   * `outputsize` - The size of the time series to return. Either `compact` or `full`.
@@ -96,7 +96,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the daily adjusted time series for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the time series for.
   * `outputsize` - The size of the time series to return. Either `compact` or `full`.
@@ -133,7 +133,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the weekly time series for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the time series for.
 
@@ -165,7 +165,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the weekly adjusted time series for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the time series for.
 
@@ -199,7 +199,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the monthly time series for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the time series for.
 
@@ -231,7 +231,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the monthly adjusted time series for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the time series for.
 
@@ -265,7 +265,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the quote for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the quote for.
 
@@ -294,7 +294,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the search results for a given keyword.
 
-  ## Inputs
+  ## Required
 
   * `keywords` - The keywords to search for.
 
@@ -348,7 +348,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the news sentiment
 
-  ## Parameters
+  ## Optional
 
   * `tickers` - A comma-separated list of stock tickers.
   * `topics` - A comma-separated list of topics.
@@ -443,7 +443,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the company overview for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the overview for.
 
@@ -505,7 +505,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the income statements for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the income statements for.
 
@@ -552,7 +552,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the balance sheets for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the balance sheets for.
 
@@ -611,7 +611,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the cash flow statements for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the cash flow statements for.
 
@@ -661,7 +661,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the earnings for a given symbol.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The stock symbol to fetch the earnings for.
 
@@ -694,7 +694,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the current exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `from_currency` - The currency to convert from.
   * `to_currency` - The currency to convert to.
@@ -728,7 +728,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the intraday exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `from_symbol` - The currency to convert from.
   * `to_symbol` - The currency to convert to.
@@ -772,7 +772,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the daily exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `from_symbol` - The currency to convert from.
   * `to_symbol` - The currency to convert to.
@@ -813,7 +813,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the weekly exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `from_symbol` - The currency to convert from.
   * `to_symbol` - The currency to convert to.
@@ -853,7 +853,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the monthly exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `from_symbol` - The currency to convert from.
   * `to_symbol` - The currency to convert to.
@@ -893,7 +893,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the crypto exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `from_symbol` - The currency to convert from.
   * `to_symbol` - The currency to convert to.
@@ -927,7 +927,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the intraday crypto exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The currency to convert from.
   * `market` - The currency to convert to.
@@ -974,7 +974,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the daily crypto exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The currency to convert from.
   * `market` - The currency to convert to.
@@ -1022,7 +1022,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the weekly crypto exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The currency to convert from.
   * `market` - The currency to convert to.
@@ -1070,7 +1070,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the monthly crypto exchange rate for a given currency pair.
 
-  ## Inputs
+  ## Required
 
   * `symbol` - The currency to convert from.
   * `market` - The currency to convert to.
@@ -1118,7 +1118,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for WTI crude oil.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1143,7 +1143,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for Brent crude oil.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1168,7 +1168,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for natural gas.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1193,7 +1193,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for copper.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1218,7 +1218,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for aluminum.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1243,7 +1243,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for wheat
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1268,7 +1268,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for corn
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1293,7 +1293,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for cotton
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1318,7 +1318,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for sugar
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1343,7 +1343,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for coffee
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1368,7 +1368,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the prices for commodities index
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1394,7 +1394,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the real GDP of the United States.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1419,7 +1419,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the real GDP per capita of the United States.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1444,7 +1444,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the treasury yield of the United States.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
   * `maturity` - The maturity of treasury yield.
@@ -1470,7 +1470,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the federal funds rate of the United States.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1496,7 +1496,7 @@ defmodule AlphaVantage do
   @doc """
   Fetches the consumer price index of the United States.
 
-  ## Inputs
+  ## Required
 
   * `interval` - The interval between two consecutive data points in the time series.
 
@@ -1623,7 +1623,2011 @@ defmodule AlphaVantage do
   """
   def nonfarm_payroll, do: get(%{function: "NONFARM_PAYROLL"})
 
-  @doc false
+  @doc """
+  Fetches simple moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Simple Moving Average (SMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern"
+    },
+    "Technical Analysis: SMA" => %{
+      "2023-06-02 14:36" => %{
+        "SMA" => "180.5028"
+      },
+    }
+  }
+  ```
+  """
+  def sma(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "SMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches exponential moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Exponential Moving Average (EMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern"
+    },
+    "Technical Analysis: EMA" => %{
+      "2023-06-02 14:36" => %{
+        "EMA" => "180.5264"
+      },
+    }
+  }
+  ```
+  """
+  def ema(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "EMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches weighted moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Weighted Moving Average (WMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern"
+    },
+    "Technical Analysis: WMA" => %{
+      "2023-06-02 14:36" => %{
+        "WMA" => "180.5467"
+      },
+    }
+  }
+  ```
+  """
+  def wma(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "WMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches double exponential moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Double Exponential Moving Average (DEMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern"
+    },
+    "Technical Analysis: DEMA" => %{
+      "2023-06-02 14:36" => %{
+        "DEMA" => "180.5467"
+      },
+    }
+  }
+  ```
+  """
+  def dema(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "DEMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches triple exponential moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Triple Exponential Moving Average (TEMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern"
+    },
+    "Technical Analysis: TEMA" => %{
+      "2023-06-02 14:36" => %{
+        "TEMA" => "180.6256"
+      },
+    }
+  }
+  ```
+  """
+  def tema(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "TEMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches triangular moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Triangular Exponential Moving Average (TRIMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: TRIMA" => %{
+      "2023-06-02 14:36" => %{
+        "TRIMA" => "180.5130"
+      },
+    }
+  }
+  ```
+  """
+  def trima(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "TRIMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches Kaufman adaptive moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Kaufman Adaptive Moving Average (KAMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: KAMA" => %{
+      "2023-06-02 14:36" => %{
+        "KAMA" => "180.5189"
+      },
+    }
+  }
+  ```
+  """
+  def kama(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "KAMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the MESA adaptive moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "MESA Adaptive Moving Average (MAMA)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: Fast Limit" => 0.01,
+      "5.2: Slow Limit" => 0.01,
+      "6: Series Type" => "high",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: MAMA" => %{
+      "2023-06-02 14:36" => %{
+        "FAMA" => "180.7266",
+        "MAMA" => "180.6225"
+      },
+    }
+  }
+  ```
+  """
+  def mama(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "MAMA",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the volume weighted average price.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "IBM",
+      "2: Indicator" => "Volume Weighted Average Price (VWAP)",
+      "3: Last Refreshed" => "2023-06-28 19:45:00",
+      "4: Interval" => "15min",
+      "5: Time Zone" => "US/Eastern"
+    },
+    "Technical Analysis: VWAP" => %{
+      "2023-06-28 19:45" => %{
+        "VWAP" => "131.7526"
+      },
+    }
+  }
+  ```
+  """
+  def vwap(symbol, interval), do: get(%{function: "VWAP", symbol: symbol, interval: interval})
+
+  @doc """
+  Fetches the triple exponential moving average values for a given symbol.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each moving average value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Triple Exponential Moving Average (T3)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 20,
+      "6: Volume Factor (vFactor)" => 0.7,
+      "7: Series Type" => "high",
+      "8: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: T3" => %{
+      "2023-06-02 14:36" => %{
+        "T3" => "180.4336"
+      },
+    }
+  }
+  ```
+  """
+  def t3(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "T3",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the moving average convergence / divergence values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Optional
+
+  * `fastperiod` - The time period of the fast EMA.
+  * `slowperiod` - The time period of the slow EMA.
+  * `signalperiod` - The time period of the signal EMA.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+        "1: Symbol" => "IBM",
+        "2: Indicator" => "Moving Average Convergence/Divergence (MACD)",
+        "3: Last Refreshed" => "2023-06-29",
+        "4: Interval" => "daily",
+        "5.1: Fast Period" => 12,
+        "5.2: Slow Period" => 26,
+        "5.3: Signal Period" => 9,
+        "6: Series Type" => "open",
+        "7: Time Zone" => "US/Eastern"
+    },
+    "Technical Analysis: MACD" => %{
+      "2023-06-29" => %{
+        "MACD" => "0.8975",
+        "MACD_Signal" => "1.6957",
+        "MACD_Hist" => "-0.7982"
+      },
+    }
+  }
+  ```
+  """
+  def macd(symbol, interval, series_type, opts \\ %{}),
+    do:
+      get(
+        Map.merge(
+          %{function: "MACD", symbol: symbol, interval: interval, series_type: series_type},
+          opts
+        )
+      )
+
+  @doc """
+  Fetches the moving average convergence / divergence values with controllable moving average type.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Optional
+
+  * `fastperiod` - The time period of the fast EMA.
+  * `slowperiod` - The time period of the slow EMA.
+  * `signalperiod` - The time period of the signal EMA.
+
+  ## Response
+
+  ```elixir
+
+  ```
+  """
+  def macdext(symbol, interval, series_type, opts \\ %{}),
+    do:
+      get(
+        Map.merge(
+          %{function: "MACDEXT", symbol: symbol, interval: interval, series_type: series_type},
+          opts
+        )
+      )
+
+  @doc """
+  Fetches the  stochastic oscillator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Optional
+
+  * `fastkperiod` - The time period of the fastk moving average.
+  * `slowkperiod` - The time period of the slowk moving average.
+  * `slowdperiod` - The time period of the slowd moving average.
+  * `slowkmatype` - The type of moving average for the slowk moving average.
+  * `slowdmatype` - The type of moving average for the slowd moving average.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Stochastic (STOCH)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: FastK Period" => 5,
+      "5.2: SlowK Period" => 3,
+      "5.3: SlowK MA Type" => 0,
+      "5.4: SlowD Period" => 3,
+      "5.5: SlowD MA Type" => 0,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: STOCH" => %{
+      "2023-06-02 14:36" => %{
+        "SlowD" => "66.4452",
+        "SlowK" => "54.1389"
+      },
+    }
+  }
+  ```
+  """
+  def stoch(symbol, interval, opts \\ %{}),
+    do:
+      get(
+        Map.merge(
+          %{function: "STOCH", symbol: symbol, interval: interval},
+          opts
+        )
+      )
+
+  @doc """
+  Fetches the stochastic oscillator fast values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Optional
+
+  * `fastkperiod` - The time period of the fastk moving average.
+  * `fastdperiod` - The time period of the fastd moving average.
+  * `fastdmatype` - The type of moving average for the fastd moving average.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Stochastic Fast (STOCHF)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: FastK Period" => 5,
+      "5.2: FastD Period" => 3,
+      "5.3: FastD MA Type" => 0,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: STOCHF" => %{
+      "2023-06-02 14:36" => %{
+        "FastD" => "54.1389",
+        "FastK" => "43.7500"
+      },
+    }
+  }
+  ```
+  """
+  def stochf(symbol, interval, opts \\ %{}),
+    do:
+      get(
+        Map.merge(
+          %{function: "STOCHF", symbol: symbol, interval: interval},
+          opts
+        )
+      )
+
+  @doc """
+  Fetches the relative strength index values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each RSI value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Relative Strength Index (RSI)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: RSI" => %{
+      "2023-06-02 14:36" => %{
+        "RSI" => "50.3319"
+      },
+    }
+  }
+  ```
+  """
+  def rsi(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "RSI",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the stochastic relative strength index values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each RSI value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Optional
+
+  * `fastkperiod` - The time period of the fastk moving average.
+  * `fastdperiod` - The time period of the fastd moving average.
+  * `fastdmatype` - The type of moving average for the fastd moving average.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Relative Strength Index (RSI)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: RSI" => %{
+      "2023-06-02 14:36" => %{
+        "RSI" => "50.3319"
+      },
+    }
+  }
+  ```
+  """
+  def stochrsi(symbol, interval, time_period, series_type, opts \\ %{}) do
+    get(
+      Map.merge(
+        %{
+          function: "STOCHRSI",
+          symbol: symbol,
+          interval: interval,
+          time_period: time_period,
+          series_type: series_type
+        },
+        opts
+      )
+    )
+  end
+
+  @doc """
+  Fetches the Williams' %R values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each Williams' %R value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Williams' %R (WILLR)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: WILLR" => %{
+      "2023-06-02 14:36" => %{
+        "WILLR" => "-29.5775"
+      },
+    }
+  }
+  ```
+  """
+  def willr(symbol, interval, time_period),
+    do: get(%{function: "WILLR", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the average directional movement index values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each ADX value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Average Directional Movement Index (ADX)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: ADX" => %{
+      "2023-06-02 14:36" => %{
+        "ADX" => "8.5204"
+      },
+    }
+  }
+  ```
+  """
+  def adx(symbol, interval, time_period),
+    do: get(%{function: "ADX", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the average directional movement index rating values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each ADXR value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Average Directional Movement Index Rating (ADXR)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: ADXR" => %{
+      "2023-06-02 14:36" => %{
+        "ADXR" => "8.4428"
+      },
+    }
+  }
+  ```
+  """
+  def adxr(symbol, interval, time_period),
+    do: get(%{function: "ADXR", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the absolute price oscillator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Optional
+
+  * `fastperiod` - The time period of the fast EMA.
+  * `slowperiod` - The time period of the slow EMA.
+  * `matype` - The type of moving average to be used.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Absolute Price Oscillator (APO)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: Fast Period" => 12,
+      "5.2: Slow Period" => 26,
+      "5.3: MA Type" => 0,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: APO" => %{
+      "2023-06-02 14:36" => %{
+        "APO" => "0.0889"
+      },
+    }
+  }
+  ```
+  """
+  def apo(symbol, interval, series_type, opts \\ %{}),
+    do:
+      get(
+        Map.merge(
+          %{function: "APO", symbol: symbol, interval: interval, series_type: series_type},
+          opts
+        )
+      )
+
+  @doc """
+  Fetches the percentage price oscillator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Optional
+
+  * `fastperiod` - The time period of the fast EMA.
+  * `slowperiod` - The time period of the slow EMA.
+  * `matype` - The type of moving average to be used.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Percentage Price Oscillator (PPO)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: Fast Period" => 12,
+      "5.2: Slow Period" => 26,
+      "5.3: MA Type" => 0,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: PPO" => %{
+      "2023-06-02 14:36" => %{
+        "PPO" => "0.0493"
+      },
+    }
+  }
+  ```
+  """
+  def ppo(symbol, interval, series_type, opts \\ %{}),
+    do:
+      get(
+        Map.merge(
+          %{function: "PPO", symbol: symbol, interval: interval, series_type: series_type},
+          opts
+        )
+      )
+
+  @doc """
+  Fetches the momentum values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Momentum (MOM)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: MOM" => %{
+      "2023-06-02 14:36" => %{
+        "MOM" => "0.0350"
+      },
+    }
+  }
+  ```
+  """
+  def mom(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "MOM",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the balance of power values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Balance Of Power (BOP)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: BOP" => %{
+      "2023-06-02 14:36" => %{
+        "BOP" => "-0.2817"
+      },
+    }
+  }
+  ```
+  """
+  def bop(symbol, interval), do: get(%{function: "BOP", symbol: symbol, interval: interval})
+
+  @doc """
+  Fetches the commodity channel index values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Commodity Channel Index (CCI)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: CCI" => %{
+      "2023-06-02 14:36" => %{
+        "CCI" => "52.8769"
+      },
+    }
+  }
+  ```
+  """
+  def cci(symbol, interval, time_period),
+    do: get(%{function: "CCI", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the Chande momentum oscillator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Chande Momentum Oscillator (CMO)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: CMO" => %{
+      "2023-06-02 14:36" => %{
+        "CMO" => "0.6637"
+      },
+    }
+  }
+  ```
+  """
+  def cmo(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "CMO",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the rate of change values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Rate of change : ((price/prevPrice)-1)*100",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: ROC" => %{
+      "2023-06-02 14:36" => %{
+        "ROC" => "0.0194"
+      },
+    }
+  }
+  ```
+  """
+  def roc(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "ROC",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the rate of change ratio values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Rate of change ratio: (price/prevPrice)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: ROCR" => %{
+      "2023-06-02 14:36" => %{
+        "ROCR" => "1.0002"
+      },
+    }
+  }
+  ```
+  """
+  def rocr(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "ROCR",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the Aroon indicator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Aroon (AROON)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: AROON" => %{
+      "2023-06-02 14:36" => %{
+        "Aroon Down" => "53.3333",
+        "Aroon Up" => "13.3333"
+      },
+    }
+  }
+  ```
+  """
+  def aroon(symbol, interval, time_period),
+    do: get(%{function: "AROON", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the Aroon oscillator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Aroon Oscillator (AROONOSC)",
+      "3: Last Refreshed" => "2023-06-28 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: AROONOSC" => %{
+      "2023-06-02 14:36" => %{
+        "AROONOSC" => "-40.0000"
+      },
+    }
+  }
+  ```
+  """
+  def aroonosc(symbol, interval, time_period),
+    do: get(%{function: "AROONOSC", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the money flow index values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Money Flow Index (MFI)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: MFI" => %{
+      "2023-06-02 14:36" => %{
+        "MFI" => "49.2195"
+      },
+    }
+  }
+  ```
+  """
+  def mfi(symbol, interval, time_period),
+    do: get(%{function: "MFI", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the 1-day rate of change of a triple smooth exponential moving average values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "1-day Rate-Of-Change (ROC) of a Triple Smooth EMA (TRIX)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: TRIX" => %{
+      "2023-06-02 14:36" => %{
+        "TRIX" => "-0.0014"
+      },
+    }
+  }
+  ```
+  """
+  def trix(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "TRIX",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the ultimate oscillator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Optional
+
+  * `timeperiod1` - The number of data points used to calculate the first momentum value.
+  * `timeperiod2` - The number of data points used to calculate the second momentum value.
+  * `timeperiod3` - The number of data points used to calculate the third momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Ultimate Oscillator (ULTOSC)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: Time Period 1" => 7,
+      "5.2: Time Period 2" => 14,
+      "5.3: Time Period 3" => 28,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: ULTOSC" => %{
+      "2023-06-02 14:36" => %{
+        "ULTOSC" => "65.7262"
+      },
+    }
+  }
+  ```
+  """
+  def ultosc(symbol, interval, opts \\ %{}),
+    do: get(Map.merge(%{function: "ULTOSC", symbol: symbol, interval: interval}, opts))
+
+  @doc """
+  Fetches the direction movement index values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Directional Movement Index (DX)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: DX" => %{
+      "2023-06-02 14:36" => %{
+        "DX" => "2.0516"
+      },
+    }
+  }
+  ```
+  """
+  def dx(symbol, interval, time_period),
+    do: get(%{function: "DX", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the minus directional indicator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Minus Directional Indicator (MINUS_DI)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: MINUS_DI" => %{
+      "2023-06-02 14:36" => %{
+        "MINUS_DI" => "21.9017"
+      },
+    }
+  }
+  ```
+  """
+  def minus_di(symbol, interval, time_period),
+    do: get(%{function: "MINUS_DI", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the plus directional indicator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Plus Directional Indicator (PLUS_DI)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: PLUS_DI" => %{
+      "2023-06-02 14:36" => %{
+        "PLUS_DI" => "21.0211"
+      },
+    }
+  }
+  ```
+  """
+  def plus_di(symbol, interval, time_period),
+    do: get(%{function: "PLUS_DI", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the minus directional movement values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Minus Directional Movement (MINUS_DM)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: MINUS_DM" => %{
+      "2023-06-02 14:36" => %{
+        "MINUS_DM" => "1.2460"
+      },
+    }
+  }
+  ```
+  """
+  def minus_dm(symbol, interval, time_period),
+    do: get(%{function: "MINUS_DM", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the plus directional movement values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Plus Directional Movement (PLUS_DM)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: PLUS_DM" => %{
+      "2023-06-02 14:36" => %{
+        "PLUS_DM" => "1.1959"
+      },
+    }
+  }
+  ```
+  """
+  def plus_dm(symbol, interval, time_period),
+    do: get(%{function: "PLUS_DM", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the bollinger bands values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Optional
+
+  * `ndbevup` - The number of standard deviations above the upper band.
+  * `nbdevdn` - The number of standard deviations below the lower band.
+  * `matype` - The type of moving average to use.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Bollinger Bands (BBANDS)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6.1: Deviation multiplier for upper band" => 2,
+      "6.2: Deviation multiplier for lower band" => 2,
+      "6.3: MA Type" => 0,
+      "7: Series Type" => "close",
+      "8: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: BBANDS" => %{
+      "2023-06-02 14:36" => %{
+        "Real Lower Band" => "180.1986",
+        "Real Middle Band" => "180.4696",
+        "Real Upper Band" => "180.7405"
+      },
+    }
+  }
+  ```
+  """
+  def bbands(symbol, interval, time_period, series_type, opts \\ %{}),
+    do:
+      get(
+        Map.merge(
+          %{
+            function: "BBANDS",
+            symbol: symbol,
+            interval: interval,
+            time_period: time_period,
+            series_type: series_type
+          },
+          opts
+        )
+      )
+
+  @doc """
+  Fetches the midpoint
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "MidPoint over period (MIDPOINT)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Series Type" => "close",
+      "7: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: MIDPOINT" => %{
+      "2023-06-02 14:36" => %{
+        "MIDPOINT" => "180.4450"
+      },
+    }
+  }
+  ```
+  """
+  def midpoint(symbol, interval, time_period, series_type),
+    do:
+      get(%{
+        function: "MIDPOINT",
+        symbol: symbol,
+        interval: interval,
+        time_period: time_period,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the midpoint price values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Midpoint Price over period (MIDPRICE)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: MIDPRICE" => %{
+      "2023-06-02 14:36" => %{
+        "MIDPRICE" => "180.4150"
+      },
+    }
+  }
+  ```
+  """
+  def midprice(symbol, interval, time_period),
+    do: get(%{function: "MIDPRICE", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the parabolic sar values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Optional
+
+  * `acceleration` - The acceleration factor.
+  * `maximum` - The maximum acceleration factor.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Parabolic SAR (SAR)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: Acceleration" => 0.01,
+      "5.2: Maximum" => 0.2,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: SAR" => %{
+      "2023-06-02 14:36" => %{
+        "SAR" => "180.3625"
+      },
+    }
+  }
+  ```
+  """
+  def sar(symbol, interval, opts \\ %{}),
+    do: get(Map.merge(%{function: "SAR", symbol: symbol, interval: interval}, opts))
+
+  @doc """
+  Fetches the true range values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "True Range (TRANGE)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: TRANGE" => %{
+      "2023-06-02 14:36" => %{
+        "TRANGE" => "0.0710"
+      },
+    }
+  }
+  ```
+  """
+  def trange(symbol, interval), do: get(%{function: "TRANGE", symbol: symbol, interval: interval})
+
+  @doc """
+  Fetches the average true range values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Average True Range (ATR)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: ATR" => %{
+      "2023-06-02 14:36" => %{
+        "ATR" => "0.0948"
+      },
+    }
+  }
+  ```
+  """
+  def atr(symbol, interval, time_period),
+    do: get(%{function: "ATR", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the normalized average true range values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `time_period` - The number of data points used to calculate each momentum value.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Normalized Average True Range (NATR)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Period" => 60,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: NATR" => %{
+      "2023-06-02 14:36" => %{
+        "NATR" => "0.0525"
+      },
+    }
+  }
+  ```
+  """
+  def natr(symbol, interval, time_period),
+    do: get(%{function: "NATR", symbol: symbol, interval: interval, time_period: time_period})
+
+  @doc """
+  Fetches the Chaikin A/D line values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Chaikin A/D Line",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: Chaikin A/D" => %{
+      "2023-06-02 14:36" => %{
+        "Chaikin A/D" => "3704000.2959"
+      },
+    }
+  }
+  ```
+  """
+  def ad(symbol, interval), do: get(%{function: "AD", symbol: symbol, interval: interval})
+
+  @doc """
+  Fetches the Chaikin A/D oscillator values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Optional
+
+  * `fastperiod` - The time period of the fast Aroon oscillator.
+  * `slowperiod` - The time period of the slow Aroon oscillator.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Chaikin A/D Oscillator (ADOSC)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5.1: FastK Period" => 3,
+      "5.2: SlowK Period" => 10,
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: ADOSC" => %{
+      "2023-06-02 14:36" => %{
+        "ADOSC" => "102618.4584"
+      },
+    }
+  }
+  ```
+  """
+  def adosc(symbol, interval, opts \\ %{}),
+    do: get(Map.merge(%{function: "ADOSC", symbol: symbol, interval: interval}, opts))
+
+  @doc """
+  Fetches the on balance volume values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "On Balance Volume (OBV)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: OBV" => %{
+      "2023-06-02 14:36" => %{
+        "OBV" => "-5959522.0000"
+      },
+    }
+  }
+  ```
+  """
+  def obv(symbol, interval), do: get(%{function: "OBV", symbol: symbol, interval: interval})
+
+  @doc """
+  Fetches the Hilbert transform, instantaneous trendline values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Hilbert Transform - Instantaneous Trendline (HT_TRENDLINE)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Series Type" => "60",
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: HT_TRENDLINE" => %{
+      "2023-06-02 14:36" => %{
+        "HT_TRENDLINE" => "180.4392"
+      },
+    }
+  }
+  ```
+  """
+  def ht_trendline(symbol, interval, series_type),
+    do:
+      get(%{
+        function: "HT_TRENDLINE",
+        symbol: symbol,
+        interval: interval,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the Hilbert transform, sine wave values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Hilbert Transform - SineWave (HT_SINE)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Series Type" => "60",
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: HT_SINE" => %{
+      "2023-06-02 14:36" => %{
+        "LEAD SINE" => "-0.9625",
+        "SINE" => "-0.4887"
+      },
+    }
+  }
+  ```
+  """
+  def ht_sine(symbol, interval, series_type),
+    do:
+      get(%{
+        function: "HT_SINE",
+        symbol: symbol,
+        interval: interval,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the Hilbert transform, trend vs cycle mode values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Hilbert Transform - Trend vs Cycle Mode (HT_TRENDMODE)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Series Type" => "60",
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: HT_TRENDMODE" => %{
+      "2023-06-02 14:36" => %{
+        "TRENDMODE" => "1"
+      },
+    }
+  }
+  ```
+  """
+  def ht_trendmode(symbol, interval, series_type),
+    do:
+      get(%{
+        function: "HT_TRENDMODE",
+        symbol: symbol,
+        interval: interval,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the Hilbert transform, dominant cycle period values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Hilbert Transform - Dominant Cycle Period (HT_DCPERIOD)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Series Type" => "60",
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: HT_DCPERIOD" => %{
+      "2023-06-02 14:36" => %{
+        "DCPERIOD" => "15.7589"
+      },
+    }
+  }
+  ```
+  """
+  def ht_dcperiod(symbol, interval, series_type),
+    do:
+      get(%{
+        function: "HT_DCPERIOD",
+        symbol: symbol,
+        interval: interval,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the Hilbert transform, dominant cycle phase values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Hilbert Transform - Dominant Cycle Phase (HT_DCPHASE)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Series Type" => "60",
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: HT_DCPHASE" => %{
+      "2023-06-02 14:36" => %{
+        "HT_DCPHASE" => "209.2570"
+      },
+    }
+  }
+  ```
+  """
+  def ht_dcphase(symbol, interval, series_type),
+    do:
+      get(%{
+        function: "HT_DCPHASE",
+        symbol: symbol,
+        interval: interval,
+        series_type: series_type
+      })
+
+  @doc """
+  Fetches the Hilbert transform, phasor components values.
+
+  ## Required
+
+  * `symbol` - The stock symbol to fetch the data for.
+  * `interval` - The time interval between two consecutive data points in the time series.
+  * `series_type` - The desired price type in the time series.
+
+  ## Response
+
+  ```elixir
+  %{
+    "Meta Data" => %{
+      "1: Symbol" => "AAPL",
+      "2: Indicator" => "Hilbert Transform - Phasor Components (HT_PHASOR)",
+      "3: Last Refreshed" => "2023-06-29 19:59:00",
+      "4: Interval" => "1min",
+      "5: Series Type" => "60",
+      "6: Time Zone" => "US/Eastern Time"
+    },
+    "Technical Analysis: HT_PHASOR" => %{
+      "2023-06-02 14:36" => %{
+        "PHASE" => "0.0051",
+        "QUADRATURE" => "0.1202"
+      },
+    }
+  }
+  ```
+  """
+  def ht_phasor(symbol, interval, series_type),
+    do:
+      get(%{
+        function: "HT_PHASOR",
+        symbol: symbol,
+        interval: interval,
+        series_type: series_type
+      })
+
   defp get(params) do
     SimpleRateLimiter.wait_and_proceed(fn ->
       api_key = Application.get_env(:alpha_vantage_client, :api_key)
