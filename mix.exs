@@ -19,14 +19,13 @@ defmodule AlphaVantage.MixProject do
   def application do
     [
       mod: {AlphaVantage, []},
-      extra_applications: [:logger, :httpoison, :jason, :simple_rate_limiter]
+      extra_applications: [:logger, :req, :jason, :simple_rate_limiter]
     ]
   end
 
   defp deps do
     [
-      {:httpoison, "~> 2.1"},
-      {:jason, "~> 1.4"},
+      {:req, "~> 0.3.11"},
       {:simple_rate_limiter, "~> 1.0"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false}
     ]
