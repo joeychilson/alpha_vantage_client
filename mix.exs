@@ -1,7 +1,7 @@
 defmodule AlphaVantage.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.2.0"
   @description "An Elixir-based HTTP Client for the Alpha Vantage API."
 
   def project do

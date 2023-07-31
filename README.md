@@ -9,7 +9,7 @@ An Elixir-based HTTP Client for Alpha Vantage API
 ```elixir
 def deps do
   [
-    {:alpha_vantage_client, "~> 0.1.0"}
+    {:alpha_vantage_client, "~> 0.2.0"}
   ]
 end
 ```
